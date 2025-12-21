@@ -63,7 +63,7 @@
                 className="w-40 h-40 relative"
               >
                 <Image
-                  src="/assets/Profile.jpg"
+                  src="/assets/Profile.png"
                   alt="Jessica Angela Huang"
                   fill
                   className="rounded-full object-cover"
