@@ -423,7 +423,7 @@ import { link } from "fs";
                     role: "Frontend Developer | Human Computer Interaction",
                     desc: "Designed and built frontend UI for an incentive-based recycling application using modern web technologies. Contributed to UX flow design and usability considerations.",
                     link: "https://www.figma.com/proto/L7oNRgCqHdEe1Z2G7RPcIK/Recykle?node-id=2-2",
-                    linkLabel: "View Prototype Design",
+                    linkLabel: "View Prototype Design →",
                     image: "/assets/Recykle.png",
                   },
                   {
@@ -431,7 +431,7 @@ import { link } from "fs";
                     role: "Frontend Developer | Project Hatchery",
                     desc: "Designed and built frontend UI for a cleaning service mobile app. Contributed to UX flow design and usability considerations.",
                     link: "https://www.figma.com/proto/XEUtq5uctT3yBSFs53yV2e/Kleanse---Prototype2",
-                    linkLabel: "View Prototype Design",
+                    linkLabel: "View Prototype Design →",
                     image: "/assets/Kleanse.png",
                   },
                   {
@@ -607,6 +607,83 @@ import { link } from "fs";
 
             </div> 
             </section>
+
+
+
+{/* Organizations */}
+<section
+  id="organizations"
+  className={`px-10 py-20 transition-colors duration-300 ${
+    darkMode ? "bg-[#3B1C32]" : "bg-white"
+  }`}
+>
+  <div className="max-w-4xl mx-auto">
+
+    {/* Title */}
+    <motion.h2
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5 }}
+      className="text-2xl font-semibold mb-12 text-center"
+    >
+      Organizations
+    </motion.h2>
+
+    {/* Organization Card */}
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5 }}
+      className={`rounded-2xl p-8 shadow ${
+        darkMode ? "bg-[#6A1E55]" : "bg-pink-50"
+      }`}
+    >
+      {/* Logo */}
+      <div className="flex justify-center mb-6">
+        <div className="relative w-80 h-30">
+          <Image
+            src="/assets/GDSC.png"
+            alt="Google Developer Student Club"
+            fill
+            className="object-contain"
+          />
+        </div>
+      </div>
+
+      <h3 className="text-lg font-semibold mb-1 text-center">
+        Regular Member
+      </h3>
+
+      <p
+        className={`text-sm mb-2 text-center ${
+          darkMode ? "text-pink-200" : "text-pink-600"
+        }`}
+      >
+        Google Developer Student Club (GDSC)
+      </p>
+
+      <p className="text-xs opacity-70 mb-4 text-center">
+        Oct 2023 – Sept 2024
+      </p>
+
+      <ul className="text-sm space-y-2 max-w-md mx-auto">
+        <li className="flex gap-3">
+          <span className="text-pink-500">●</span>
+          Attended workshops and seminars
+        </li>
+        <li className="flex gap-3">
+          <span className="text-pink-500">●</span>
+          Connected with fellow regular and core members
+        </li>
+      </ul>
+    </motion.div>
+
+  </div>
+</section>
+
+
 
         {/* Certificates */}
 <section
@@ -830,6 +907,28 @@ import { link } from "fs";
           </a>
         </p>
       </div>
+
+      {/* GitHub */}
+        <div
+          className={`rounded-2xl p-6 shadow text-sm sm:col-span-2 flex justify-center ${
+            darkMode ? "bg-[#6A1E55]" : "bg-pink-50"
+          }`}
+        >
+          <div className="text-center">
+            🐱 <span className="font-medium">GitHub</span>
+            <p className="mt-1">
+              <a
+                href="https://github.com/jessicaangelah"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-pink-500 hover:underline"
+              >
+                github.com/jessicaangelah
+              </a>
+            </p>
+          </div>
+        </div>
+
 
     </div>
 
