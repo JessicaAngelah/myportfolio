@@ -3,6 +3,7 @@
     import { useState } from "react";
     import Image from "next/image";
     import { motion } from "framer-motion";
+import { link } from "fs";
 
     export default function Home() {
       const [darkMode, setDarkMode] = useState(false);
@@ -416,12 +417,13 @@
 
               {/* Projects Grid */}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-
                 {[
                   {
                     title: "Recykle Web App",
                     role: "Frontend Developer | Human Computer Interaction",
                     desc: "Designed and built frontend UI for an incentive-based recycling application using modern web technologies. Contributed to UX flow design and usability considerations.",
+                    link: "https://www.figma.com/proto/L7oNRgCqHdEe1Z2G7RPcIK/Recykle?node-id=2-2",
+                    linkLabel: "View Prototype Design",
                     image: "/assets/Recykle.png",
                   },
                   {
@@ -429,58 +431,112 @@
                     role: "Frontend Developer | Project Hatchery",
                     desc: "Designed and built frontend UI for a cleaning service mobile app. Contributed to UX flow design and usability considerations.",
                     link: "https://www.figma.com/proto/XEUtq5uctT3yBSFs53yV2e/Kleanse---Prototype2",
+                    linkLabel: "View Prototype Design",
                     image: "/assets/Kleanse.png",
                   },
                   {
                     title: "Flower Management System",
                     role: "Developer | Data Structures",
-                    desc: "Built a system to manage flower inventory using structured data handling and algorithmic logic with Python.",
+                    desc: "Built a system to manage flower inventory using structured data handling and algorithmic logic with Java.",
                     image: "/assets/FlowerShop.png",
+                    tech: ["Java"],
+                    actions: [
+                      {
+                        label: "View Source Code",
+                        link: "https://github.com/VaniaAgnes/FlowerShop-Management-System.git",
+                      },
+                    ],
                   },
                   {
                     title: "Grocery Management System",
                     role: "Developer | Database",
-                    desc: "Designed and implemented a database-driven application for Grocery Management System made in Python using MySQL as its database.",
+                    desc: "Database-driven Grocery Management System built with Python and MySQL.",
                     image: "/assets/GroceryStore.png",
+                    tech: ["Python", "MySQL", "XAMPP"],
+                    actions: [
+                      {
+                        label: "View Source Code",
+                        link: "https://github.com/VaniaAgnes/Database-FP.git",
+                      },
+                    ],
                   },
                   {
                     title: "Stylofit",
-                    role: "Design & Frontend Developer | Mobile Application and Design",
-                    desc: "Created UI/UX design and built the frontend for a fashion social media mobile application.",
+                    role: "Design & Frontend Developer | Mobile Application",
+                    desc: "UI/UX design and frontend for a fashion-focused social media app.",
                     image: "/assets/Stylofit.png",
+                    tech: ["JavaScript", "Firebase", "Frontend", "UI/UX", "HTML", "CSS"],
                   },
                   {
                     title: "Moralm",
-                    role: "Design & Frontend Developer | Web Application Development & Security",
-                    desc: "Designed and built frontend UI for a moringa leaves delivery system using modern web technologies.",
-                    link: "https://github.com/JessicaAngelah/WADS-MoralmHarbor-FP-Done.git",
+                    role: "Design & Frontend Developer | Web App & Security",
+                    desc: "Designed the prototype for the company’s supply chain and built the frontend for their delivery system.",
                     image: "/assets/Moralm.png",
+                    tech: ["JavaScript", "Firebase", "Frontend", "UI/UX", "HTML", "CSS"],
+                    actions: [
+                      {
+                        label: "View Source Code",
+                        link: "https://github.com/JessicaAngelah/WADS-MoralmHarbor-FP-Done.git",
+                      },
+                    ],
                   },
                   {
                     title: "FindMyCoffee",
-                    role: "Design | Professional Practices & Entrepreneurship in IT",
-                    desc: "Designed UI for an F&B mobile app. Contributed to UX flow design, usability considerations, and feature planning.",
+                    role: "Design | Professional Practices & Entrepreneurship",
+                    desc: "Designed UI for an F&B mobile application.",
                     image: "/assets/FindMyCoffee.png",
                   },
                   {
-                    title: "Akslerasi.co",
-                    role: "Design & Frontend Developer | Capstone Project (Ongoing)",
-                    desc: "Creating UI/UX design and frontend components for an HR-Tech platform solution.",
+                    title: "Akselerasi.co",
+                    role: "Design & Frontend Developer | Capstone Project",
+                    desc: "UI/UX and frontend components for an HR-Tech platform.",
                     image: "/assets/Akselerasi.png",
+                     tech: ["JavaScript", "Firebase", "Frontend", "UI/UX", "HTML", "CSS"],
+                    actions: [
+                      {
+                        label: "View Source Code",
+                        link: "https://github.com/ferd78/Akselerasi.coCapstone-SE-PMS.git",
+                      },
+                    ],
                   },
-                ]
-                .map((project, index) => (
+                  {
+                    title: "Modeling Infection Dynamics with Antibiotic Treatment",
+                    role: "Computational Biology",
+                    desc: "A mathematical model simulating interactions between sensitive and resistant bacterial populations under various antibiotic treatments.",
+                    image: "/assets/InfectionDynamics.png",
+                    tech: ["Python", "NumPy", "Matplotlib"],
+                    actions: [
+                      {
+                        label: "View Source Code",
+                        link: "https://github.com/JessicaAngelah/CompBio-FP",
+                      },
+                    ],
+                  },
+                  {
+                    title: "Density Simulation",
+                    role: "Computational Physics",
+                    desc: "Density-based interactive tool designed to help visualize and understand spatial behavior. Implemented in Python.",
+                    image: "/assets/DensitySimulator.png",
+                    tech: ["Python"],
+                    actions: [
+                      {
+                        label: "View Source Code",
+                        link: "https://github.com/VaniaAgnes/Density-Simulator",
+                      },
+                    ],
+                  },
+                ].map((project, index) => (
                   <motion.div
                     key={index}
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: index * 0.05 }}
-                    className={`rounded-2xl shadow overflow-hidden ${
+                    className={`rounded-2xl shadow flex flex-col ${
                       darkMode ? "bg-[#6A1E55]" : "bg-pink-50"
                     }`}
                   >
-                    {/* Image placeholder */}
+                    {/* Image */}
                     <div className="relative w-full aspect-square">
                       <Image
                         src={project.image}
@@ -488,41 +544,65 @@
                         fill
                         className="object-cover"
                       />
-
                     </div>
 
                     {/* Content */}
-                    <div className="p-6">
-                      <h3 className="font-semibold text-lg mb-1">
-                        {project.title}
-                      </h3>
+                    <div className="p-6 flex flex-col flex-1">
+                      <h3 className="font-semibold text-lg mb-1">{project.title}</h3>
 
-                      <p
-                        className={`text-sm mb-3 ${
-                          darkMode ? "text-pink-200" : "text-pink-600"
-                        }`}
-                      >
+                      <p className={`text-sm mb-2 ${
+                        darkMode ? "text-pink-200" : "text-pink-600"
+                      }`}>
                         {project.role}
                       </p>
 
-                      <p className="text-sm opacity-90 mb-3">
-                        {project.desc}
-                      </p>
+                      <p className="text-sm opacity-90 mb-3">{project.desc}</p>
 
-                      {project.link && (
-                        <a
-                          href={project.link}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-sm font-medium text-pink-500 hover:underline"
-                        >
-                          View →
-                        </a>
+                      {/* Tech */}
+                      {project.tech && (
+                        <div className="flex flex-wrap gap-2 mb-3">
+                          {project.tech.map((t, i) => (
+                            <span
+                              key={i}
+                              className="text-xs px-3 py-1 rounded-full bg-pink-200 text-pink-800"
+                            >
+                              {t}
+                            </span>
+                          ))}
+                        </div>
                       )}
+
+                      {/* Actions */}
+                      <div className="mt-auto flex gap-3 flex-wrap">
+                        {project.link && (
+                          <a
+                            href={project.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-sm font-medium text-pink-500 hover:underline"
+                          >
+                            {project.linkLabel ?? "View →"}
+                          </a>
+                        )}
+
+                        {project.actions?.map((action, i) => (
+                          <a
+                            key={i}
+                            href={action.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-sm font-medium text-pink-500 hover:underline"
+                          >
+                            {action.label} →
+                          </a>
+                        ))}
+                      </div>
                     </div>
                   </motion.div>
+
                 ))}
               </div>
+
 
 
             </div> 
