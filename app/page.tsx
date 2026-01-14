@@ -466,6 +466,12 @@ import { link } from "fs";
                     desc: "UI/UX design and frontend for a fashion-focused social media app.",
                     image: "/assets/Stylofit.png",
                     tech: ["JavaScript", "Firebase", "Frontend", "UI/UX", "HTML", "CSS"],
+                    actions: [
+                      { 
+                        label: "View Source Code",
+                        link: "https://github.com/abasiman/stylofitApp",
+                      },
+                    ],
                   },
                   {
                     title: "Moralm",
@@ -484,6 +490,8 @@ import { link } from "fs";
                     title: "FindMyCoffee",
                     role: "Design | Professional Practices & Entrepreneurship",
                     desc: "Designed UI for an F&B mobile application.",
+                    link: "https://www.figma.com/proto/LaPg4XUtCYTbk9NkitEKuw/FindMyCoffee?node-id=74-66&p=f&t=e2Xk5PgtlelRsFpG-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=74%3A66",
+                    linkLabel: "View Prototype Design →",
                     image: "/assets/FindMyCoffee.png",
                   },
                   {
