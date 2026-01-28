@@ -302,6 +302,10 @@ import { link } from "fs";
                 "Adapted quickly to new tools, instructions, and roles",
                 "Participated in group-based events requiring coordination, time management, and service-oriented communication",
                 "Handled multiple tasks under time pressure while staying organized and professional",
+                "Provided responsive customer support through online chat, addressing inquiries, resolving issues, and ensuring a positive user experience",
+                "Managed real-time communication with customers, demonstrating problem-solving skills, empathy, and clear written communication",
+                "Handled customer questions regarding products, order status, and general inquiries while maintaining professionalism and accuracy",
+
               ].map((item, index) => (
                 <motion.div
                   key={index}
@@ -476,7 +480,7 @@ import { link } from "fs";
                   {
                     title: "Moralm",
                     role: "Design & Frontend Developer | Web App & Security",
-                    desc: "Designed the prototype for the company’s supply chain and built the frontend for their delivery system.",
+                    desc: "Designed the prototype for the company’s supply chain and built the frontend for their delivery system & Settings.",
                     image: "/assets/Moralm.png",
                     tech: ["JavaScript", "Firebase", "Frontend", "UI/UX", "HTML", "CSS"],
                     actions: [
@@ -499,7 +503,7 @@ import { link } from "fs";
                     role: "Design & Frontend Developer | Capstone Project",
                     desc: "UI/UX and frontend components for an HR-Tech platform.",
                     image: "/assets/Akselerasi.png",
-                     tech: ["JavaScript", "Firebase", "Frontend", "UI/UX", "HTML", "CSS"],
+                     tech: ["JavaScript", "Firebase", "Frontend", "UI/UX", "HTML", "CSS", "TypeScript"],
                     actions: [
                       {
                         label: "View Source Code",
@@ -533,6 +537,52 @@ import { link } from "fs";
                       },
                     ],
                   },
+                  {
+                    title: "ANTAM Stock Price Prediction",
+                    role: "Machine Learning | Time Series Forecasting",
+                    desc: "Built and compared XGBoost and Random Forest to predict ANTAM stock prices. Implemented buy/sell signal generation based on predicted returns and evaluated performance using backtesting strategies.",
+                    image: "/assets/MLStockPrediction.png",
+                    tech: ["Python", "XGBoost", "Random Forest", "Pandas", "NumPy", "Matplotlib"],
+                    actions: [
+                      {
+                        label: "View Source Code",
+                        link: "https://github.com/JessicaAngelah/MLStockPrediction-usingXGBoost-RandomForest.git",
+                      },
+                    ],
+                  },
+                  {
+                    title: "To-Do List Web App",
+                    role: "Frontend Developer",
+                    desc: "A responsive to-do list web application that allows users to add, complete, and delete tasks. Deployed using Vercel with a clean and intuitive UI.",
+                    image: "/assets/ToDoList.png",
+                    tech: ["JavaScript", "HTML", "CSS"],
+                    actions: [
+                      {
+                        label: "Live Demo",
+                        link: "https://to-do-list-app-ten-beige.vercel.app/",
+                      },
+                      {
+                        label: "View Source Code",
+                        link: "https://github.com/JessicaAngelah/ToDoListApp.git",
+                      },
+                    ],
+                  },
+                  {
+                    title: "Alarm Clock Finite State Machine (FSM)",
+                    role: "Developer | Embedded Systems & Logic Design",
+                    desc: "Implemented an Alarm Clock system using a Finite State Machine (FSM) in C. The system models alarm behavior across Idle, Ring, and Snooze states, including state transitions, combinational logic, and testing via terminal execution.",
+                    image: "/assets/FSM.png",
+                    tech: ["C", "Finite State Machine", "Logic Design"],
+                    actions: [
+                      {
+                        label: "View Source Code",
+                        link: "https://github.com/JessicaAngelah/FSM-VirtualFinalProject-Optional.git",
+                      },
+                    ],
+                  },
+
+
+
                 ].map((project, index) => (
                   <motion.div
                     key={index}
