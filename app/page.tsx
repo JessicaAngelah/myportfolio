@@ -257,7 +257,7 @@ import { link } from "fs";
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm">
           {[
-            ["Programming & Web", "Python, HTML, CSS, JavaScript"],
+            ["Programming & Web", "Python, HTML, CSS, JavaScript", "Java", "C", "SQL"],
             ["Frontend Development", "ReactJS (learning), UI wireframing, responsive design"],
             ["Data & Analytics", "Power BI, Tableau, Google Colab"],
             ["Tools & Platforms", "Jira, Slack, Microsoft Teams, Google Workspace, Microsoft Office"],
