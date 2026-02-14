@@ -281,49 +281,86 @@ import { link } from "fs";
         </div>
       </motion.div>
 
-      {/* Experience */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-        >
-          <h3 className="text-xl font-semibold mb-6 text-center">
-            Experience
-          </h3>
 
-          <div className="flex justify-center">
-            <div className="space-y-4 text-sm max-w-4xl w-full">
-              {[
-                "Collaborated with cross-functional teams to complete multiple academic and creative projects",
-                "Communicated clearly with teammates to meet deadlines and maintain quality",
-                "Led a group in preparing and delivering a major organisational presentation",
-                "Demonstrated reliability, punctuality, and responsibility throughout project delivery",
-                "Adapted quickly to new tools, instructions, and roles",
-                "Participated in group-based events requiring coordination, time management, and service-oriented communication",
-                "Handled multiple tasks under time pressure while staying organized and professional",
-                "Provided responsive customer support through online chat, addressing inquiries, resolving issues, and ensuring a positive user experience",
-                "Managed real-time communication with customers, demonstrating problem-solving skills, empathy, and clear written communication",
-                "Handled customer questions regarding products, order status, and general inquiries while maintaining professionalism and accuracy",
+          {/* Experience */}
+<motion.div
+  initial={{ opacity: 0, y: 20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.5 }}
+>
+  <h3 className="text-xl font-semibold mb-10 text-center">
+    Experience
+  </h3>
 
-              ].map((item, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.4, delay: index * 0.05 }}
-                  className={`flex gap-4 items-start rounded-2xl p-5 shadow ${
-                    darkMode ? "bg-[#6A1E55]" : "bg-pink-50"
-                  }`}
-                >
-                  <span className="mt-1 text-pink-500">●</span>
-                  <p className="opacity-90">{item}</p>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </motion.div>
+  <div className="space-y-8 max-w-4xl mx-auto">
+
+    {/* Bank Amar */}
+    <div
+      className={`rounded-2xl p-6 shadow ${
+        darkMode ? "bg-[#6A1E55]" : "bg-pink-50"
+      }`}
+    >
+      <h4 className="font-semibold text-lg">
+        Business Analyst Intern — Amar Bank
+      </h4>
+      <p className="text-xs opacity-70 mb-4">
+        Jakarta, Indonesia | 12 February 2026 – 11 May 2026
+      </p>
+
+      <ul className="text-sm space-y-2">
+        <li>• Assisted with data analysis and market research to support business decision-making.</li>
+        <li>• Utilized Microsoft Excel to create financial models and track performance metrics.</li>
+        <li>• Contributed to business presentations and reports for internal stakeholders.</li>
+        <li>• Collaborated with cross-functional teams to gather requirements and solve business problems.</li>
+        <li>• Conducted research to support market analysis and strategic planning.</li>
+      </ul>
+    </div>
+
+    {/* Small Business */}
+    <div
+      className={`rounded-2xl p-6 shadow ${
+        darkMode ? "bg-[#6A1E55]" : "bg-pink-50"
+      }`}
+    >
+      <h4 className="font-semibold text-lg">
+        Co-owner — Small-scale Fashion Business
+      </h4>
+      <p className="text-xs opacity-70 mb-4">
+        Indonesia | 2022 – Present
+      </p>
+
+      <ul className="text-sm space-y-2">
+        <li>• Founded and managed a fashion business specializing in imported clothing.</li>
+        <li>• Operated and managed a Shopee online store including product listings, pricing, and promotions.</li>
+        <li>• Provided end-to-end customer service including inquiries, order processing, and issue resolution.</li>
+        <li>• Managed supplier communication, order coordination, and delivery tracking.</li>
+        <li>• Maintained accurate records of sales, inventory, and transactions.</li>
+      </ul>
+    </div>
+
+    {/* Other Experiences*/}
+    <div
+      className={`rounded-2xl p-6 shadow ${
+        darkMode ? "bg-[#6A1E55]" : "bg-pink-50"
+      }`}
+    >
+      <h4 className="font-semibold text-lg">
+        Other Experiences
+      </h4>
+      <ul className="text-sm space-y-2">
+                <li>• Collaborated with cross-functional teams to complete multiple academic and creative projects</li>
+                <li>• Communicated clearly with teammates to meet deadlines and maintain quality</li>
+                <li>• Led a group in preparing and delivering a major organisational presentation</li>
+                <li>• Demonstrated reliability, punctuality, and responsibility throughout project delivery</li>
+                <li>• Adapted quickly to new tools, instructions, and roles</li>
+                <li>• Participated in group-based events requiring coordination, time management, and service-oriented communication</li>
+      </ul>
+    </div>
+
+  </div>
+</motion.div>
+
 
                   {/* Languages + Key Skills */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-20 mb-16">
