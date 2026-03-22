@@ -1,0 +1,93 @@
+"use client";
+
+import { motion } from "framer-motion";
+
+interface ExperienceProps {
+  darkMode: boolean;
+}
+
+export default function Experience({ darkMode }: ExperienceProps) {
+  return (
+    <section
+      id="experience"
+      className={`px-10 py-20 transition-colors duration-300 ${
+        darkMode ? "bg-[#3B1C32]" : "bg-white"
+      }`}
+    >
+      <div className="max-w-4xl mx-auto">
+
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="text-2xl font-semibold mb-12 text-center"
+        >
+          Experience
+        </motion.h2>
+
+        <div className="space-y-8">
+
+          {/* Amar Bank */}
+          <div
+            className={`rounded-2xl p-6 shadow ${
+              darkMode ? "bg-[#6A1E55]" : "bg-pink-50"
+            }`}
+          >
+            <h4 className="font-semibold text-lg">
+              Business Analyst Intern — Amar Bank
+            </h4>
+            <p className="text-xs opacity-70 mb-4">
+              Jakarta, Indonesia | 12 February 2026 – 11 May 2026
+            </p>
+
+            <ul className="text-sm space-y-2">
+              <li>• Assisted with data analysis and market research.</li>
+              <li>• Built financial models and tracked KPIs in Excel.</li>
+              <li>• Created business presentations and reports.</li>
+              <li>• Collaborated with cross-functional teams.</li>
+              <li>• Conducted research for market analysis.</li>
+            </ul>
+          </div>
+
+          {/* Small Business */}
+          <div
+            className={`rounded-2xl p-6 shadow ${
+              darkMode ? "bg-[#6A1E55]" : "bg-pink-50"
+            }`}
+          >
+            <h4 className="font-semibold text-lg">
+              Co-owner — Small-scale Fashion Business
+            </h4>
+            <p className="text-xs opacity-70 mb-4">
+              Indonesia | 2022 – Present
+            </p>
+
+            <ul className="text-sm space-y-2">
+              <li>• Managed Shopee operations & supplier coordination.</li>
+              <li>• Handled customer service and order processing.</li>
+              <li>• Maintained inventory and financial records.</li>
+            </ul>
+          </div>
+
+          {/* Other Experiences */}
+          <div
+            className={`rounded-2xl p-6 shadow ${
+              darkMode ? "bg-[#6A1E55]" : "bg-pink-50"
+            }`}
+          >
+            <h4 className="font-semibold text-lg">Other Experiences</h4>
+
+            <ul className="text-sm space-y-2">
+              <li>• Led academic group presentations.</li>
+              <li>• Worked in cross-functional student teams.</li>
+              <li>• Adapted quickly to new tools and systems.</li>
+              <li>• Demonstrated strong time management.</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  );
+}
