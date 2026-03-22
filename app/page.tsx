@@ -18,7 +18,7 @@ export default function Home() {
 
   return (
     <main
-      className={`transition-colors duration-300 ${
+      className={`min-h-screen transition-colors duration-300 ${
         darkMode
           ? "bg-[#1A1A1A] text-white"
           : "bg-[#FFF8F0] text-gray-900"

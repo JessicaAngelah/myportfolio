@@ -10,8 +10,8 @@ interface EducationProps {
 export default function Education({ darkMode }: EducationProps) {
   return (
     <section
-      id="about"
-      className={`px-10 py-20 transition-colors duration-300 ${
+      id="education"
+      className={`px-4 sm:px-6 lg:px-10 py-16 sm:py-20 transition-colors duration-300 ${
         darkMode ? "bg-[#3B1C32]" : "bg-white"
       }`}
     >
@@ -21,12 +21,12 @@ export default function Education({ darkMode }: EducationProps) {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-2xl font-semibold mb-10 text-center"
+          className="text-xl sm:text-2xl font-semibold mb-8 sm:mb-10 text-center"
         >
           Education
         </motion.h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {[
             {
               image: "/assets/Binus.png",
@@ -56,11 +56,11 @@ export default function Education({ darkMode }: EducationProps) {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className={`rounded-2xl p-6 shadow ${
+              className={`rounded-2xl p-4 sm:p-6 shadow ${
                 darkMode ? "bg-[#6A1E55]" : "bg-pink-50"
               }`}
             >
-              <div className="relative w-full h-24 mb-4">
+              <div className="relative w-full h-20 sm:h-24 mb-4">
                 <Image
                   src={edu.image}
                   alt={edu.name}
@@ -69,9 +69,9 @@ export default function Education({ darkMode }: EducationProps) {
                 />
               </div>
 
-              <h3 className="font-semibold">{edu.name}</h3>
-              <p className="text-sm opacity-80">{edu.location}</p>
-              <p className="text-sm mt-2">{edu.degree}</p>
+              <h3 className="text-sm sm:text-base font-semibold">{edu.name}</h3>
+              <p className="text-xs sm:text-sm opacity-80">{edu.location}</p>
+              <p className="text-xs sm:text-sm mt-2">{edu.degree}</p>
               <p className="text-xs mt-1 opacity-70">{edu.year}</p>
             </motion.div>
           ))}
