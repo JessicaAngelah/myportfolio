@@ -55,10 +55,11 @@ export default function AboutMe({ darkMode }: AboutMeProps) {
           </p>
 
           <p className="text-sm sm:text-base leading-relaxed max-w-xl">
-            Computer Science student seeking experience in an intern position.
+            Computer Science student at Binus University with a passion for technology and innovation.
             Fast learner with strong communication skills, excellent teamwork,
             and high adaptability. Experienced in handling multiple tasks under
             pressure and maintaining a positive attitude.
+            Open to relocation and available for full-time opportunities.
           </p>
         </motion.div>
       </motion.div>

@@ -9,6 +9,7 @@ import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
 import Organizations from "@/components/Organizations";
+import Courses from "@/components/Courses";
 import Certificates from "@/components/Certificates";
 import Achievements from "@/components/Achievements";
 import Contact from "@/components/Contact";
@@ -34,6 +35,7 @@ export default function Home() {
       <Experience darkMode={darkMode} />
       <Projects darkMode={darkMode} />
       <Organizations darkMode={darkMode} />
+      <Courses darkMode={darkMode} />
       <Certificates darkMode={darkMode} />
       <Achievements darkMode={darkMode} />
       <Contact darkMode={darkMode} />

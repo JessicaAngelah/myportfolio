@@ -3,7 +3,7 @@
 This is my personal portfolio website showcasing my background, skills, projects, and experiences as a **Computer Science student**.
 
 ## 🔗 Live Website
-👉 https://myportfolio-gamma-blush-26.vercel.app/
+👉 https://jessicaah-portfolio.vercel.app/
 
 ##  How to run on the development server
 ```bash

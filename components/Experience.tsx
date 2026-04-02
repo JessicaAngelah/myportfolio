@@ -38,7 +38,7 @@ export default function Experience({ darkMode }: ExperienceProps) {
               Business Analyst Intern — Amar Bank
             </h4>
             <p className="text-xs sm:text-sm opacity-70 mb-3 sm:mb-4">
-              Jakarta, Indonesia | 12 February 2026 – 11 May 2026
+              Jakarta, Indonesia | February 2026 – May 2026
             </p>
 
             <ul className="text-xs sm:text-sm space-y-2">
@@ -85,6 +85,7 @@ export default function Experience({ darkMode }: ExperienceProps) {
               <li>• Worked in cross-functional student teams.</li>
               <li>• Adapted quickly to new tools and systems.</li>
               <li>• Demonstrated strong time management.</li>
+              <li>• Attended workshops and seminars.</li>
             </ul>
           </div>
 
