@@ -35,12 +35,12 @@ export default function Skills({ darkMode }: SkillsProps) {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-6 text-xs sm:text-sm">
             {[
-              ["Programming & Web", "Python, HTML, CSS, JavaScript, Java, C, SQL, TypeScript, phpMyAdmin"],
-              ["Frontend Development", "ReactJS (learning), UI wireframing, responsive design, Node.js"],
-              ["Data & Analytics", "Power BI, Tableau, Google Colab"],
-              ["Tools & Platforms", "VSC, Jira, Slack, Microsoft Teams, Google Workspace, Microsoft Office"],
-              ["Design & Prototyping", "Figma, Canva, Miro, Draw.io"],
-              ["APIs & Backend (Basic)", "REST APIs, Firebase"],
+              ["Programming & Web", " Python, HTML, CSS, JavaScript, Java, C, C++, PHP, TypeScript, SQL, Rust"],
+              ["Frontend Development", " React.js, Node.js, Next.js, Tailwind CSS, UI wireframing, responsive design, cross-browser compatibility"],
+              ["Excel, Power BI, Tableau, Google Colab, data cleaning, data visualization, basic statistical analysis"],
+              ["Tools & Platforms", "VSC, Jira, Slack, Microsoft Teams, Google Workspace, Microsoft Office, Git, GitHub"],
+              ["Design & Prototyping", "Figma, Canva, Miro, Draw.io, PlantUML, user flow design, wireframing, prototyping"],
+              ["APIs & Backend (Basic)", "REST APIs, Firebase, SQL/Relational Databases, API integration, JSON, Docker"],
             ].map(([title, content], index) => (
               <motion.div
                 key={index}
@@ -72,7 +72,7 @@ export default function Skills({ darkMode }: SkillsProps) {
               {[
                 ["English", "Native"],
                 ["Indonesian", "Native"],
-                ["Chinese", "Intermediate"],
+                ["Chinese", "Intermediate", "(HSK 3)"],
               ].map(([lang, level], index) => (
                 <div
                   key={index}
