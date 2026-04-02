@@ -40,7 +40,7 @@ export default function Skills({ darkMode }: SkillsProps) {
               ["Excel, Power BI, Tableau, Google Colab, data cleaning, data visualization, basic statistical analysis"],
               ["Tools & Platforms", "VSC, Jira, Slack, Microsoft Teams, Google Workspace, Microsoft Office, Git, GitHub"],
               ["Design & Prototyping", "Figma, Canva, Miro, Draw.io, PlantUML, user flow design, wireframing, prototyping"],
-              ["APIs & Backend (Basic)", "REST APIs, Firebase, SQL/Relational Databases, API integration, JSON, Docker"],
+              ["APIs & Backend", "REST APIs, Firebase, SQL/Relational Databases, API integration, JSON, Docker"],
             ].map(([title, content], index) => (
               <motion.div
                 key={index}

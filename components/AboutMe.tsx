@@ -11,7 +11,9 @@ export default function AboutMe({ darkMode }: AboutMeProps) {
   return (
     <section
       id="about"
-      className="flex min-h-[calc(100vh-96px)] items-center justify-center px-4 sm:px-6 lg:px-10 py-16"
+      className={`flex min-h-screen items-center justify-center px-4 sm:px-6 lg:px-10 py-16 transition-colors duration-300 ${
+        darkMode ? "bg-[#1A1A1A]" : "bg-[#FFF8F0]"
+      }`}
     >
       <motion.div
         initial={{ opacity: 0, y: 20 }}

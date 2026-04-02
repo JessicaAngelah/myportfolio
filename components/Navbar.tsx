@@ -26,6 +26,7 @@ export default function Navbar({ darkMode, setDarkMode }: NavbarProps) {
         <li><a href="#about" className="hover:text-pink-500">About</a></li>
         <li><a href="#skills" className="hover:text-pink-500">Skills</a></li>
         <li><a href="#projects" className="hover:text-pink-500">Projects</a></li>
+        <li><a href="#courses" className="hover:text-pink-500">Courses</a></li>
         <li><a href="#certificates" className="hover:text-pink-500">Certificates</a></li>
         <li><a href="#contact" className="hover:text-pink-500">Contact</a></li>
 
@@ -64,6 +65,7 @@ export default function Navbar({ darkMode, setDarkMode }: NavbarProps) {
           <a href="#about" onClick={() => setOpen(false)}>About</a>
           <a href="#skills" onClick={() => setOpen(false)}>Skills</a>
           <a href="#projects" onClick={() => setOpen(false)}>Projects</a>
+          <a href="#courses" onClick={() => setOpen(false)}>Courses</a>
           <a href="#certificates" onClick={() => setOpen(false)}>Certificates</a>
           <a href="#contact" onClick={() => setOpen(false)}>Contact</a>
 
