@@ -27,12 +27,12 @@ export default function Courses({ darkMode }: CoursesProps) {
     {
       title: "Mathematics for AI: Beginner_OEC3003_01 (이상구)",
       image: "/assets/SKKU1.png",
-      desc: "Course taught by Professor Kim, Kyoung Hwon (English subtitles available). This course introduces the fundamental mathematics and algorithms required to understand artificial intelligence, with practical coding exercises to reinforce theoretical concepts.",
+      desc: "Course taught by Professor Kim, Kyoung Hwon (English subtitles available). This course introduces the fundamental mathematics and algorithms required to understand artificial intelligence, with practical coding exercises to reinforce theoretical concepts. This course is provided by SKKU (Sungkyunkwan University)",
     },
     {
       title: "Korean Starter Pack: Beginner_OEC3001_01 (김경훤)",
       image: "/assets/SKKU2.png",
-      desc: "Course taught by Professor Lee, Sanggu (English subtitles available). Students learn how to read and write Hangeul accurately while gaining insight into Korean culture, pronunciation, and essential everyday communication skills.",
+      desc: "Course taught by Professor Lee, Sanggu (English subtitles available). Students learn how to read and write Hangeul accurately while gaining insight into Korean culture, pronunciation, and essential everyday communication skills. This course is provided by SKKU (Sungkyunkwan University)",
     },
   ];
 

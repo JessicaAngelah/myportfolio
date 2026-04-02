@@ -72,7 +72,7 @@ export default function Skills({ darkMode }: SkillsProps) {
               {[
                 ["English", "Native"],
                 ["Indonesian", "Native"],
-                ["Chinese", "Intermediate", "(HSK 3)"],
+                ["Chinese", "Intermediate (HSK 3)"],
               ].map(([lang, level], index) => (
                 <div
                   key={index}
