@@ -12,7 +12,7 @@ export default function Organizations({ darkMode }: OrganizationsProps) {
     <section
       id="organizations"
       className={`px-4 sm:px-6 lg:px-10 py-16 sm:py-20 transition-colors duration-300 ${
-        darkMode ? "bg-[#3B1C32]" : "bg-white"
+        darkMode ? "bg-[#291B25]" : "bg-white"
       }`}
     >
       <div className="max-w-4xl mx-auto">

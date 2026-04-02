@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion, useMotionValue, useSpring } from "framer-motion";
 
 interface EducationProps {
   darkMode: boolean;
@@ -12,7 +12,7 @@ export default function Education({ darkMode }: EducationProps) {
     <section
       id="education"
       className={`px-4 sm:px-6 lg:px-10 py-16 sm:py-20 transition-colors duration-300 ${
-        darkMode ? "bg-[#3B1C32]" : "bg-white"
+        darkMode ? "bg-[#291B25]" : "bg-white"
       }`}
     >
       <div className="max-w-5xl mx-auto">
@@ -49,32 +49,76 @@ export default function Education({ darkMode }: EducationProps) {
               degree: "High School – Cambridge Curriculum",
               year: "2015 – 2022",
             },
-          ].map((edu, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className={`rounded-2xl p-4 sm:p-6 shadow ${
-                darkMode ? "bg-[#6A1E55]" : "bg-pink-50"
-              }`}
-            >
-              <div className="relative w-full h-20 sm:h-24 mb-4">
-                <Image
-                  src={edu.image}
-                  alt={edu.name}
-                  fill
-                  className="object-contain"
-                />
-              </div>
+          ].map((edu, index) => {
+            // Motion values per card
+            const x = useMotionValue(0);
+            const y = useMotionValue(0);
 
-              <h3 className="text-sm sm:text-base font-semibold">{edu.name}</h3>
-              <p className="text-xs sm:text-sm opacity-80">{edu.location}</p>
-              <p className="text-xs sm:text-sm mt-2">{edu.degree}</p>
-              <p className="text-xs mt-1 opacity-70">{edu.year}</p>
-            </motion.div>
-          ))}
+            const rotateX = useSpring(y, { stiffness: 150, damping: 20 });
+            const rotateY = useSpring(x, { stiffness: 150, damping: 20 });
+
+            const handleMouseMove = (e: any) => {
+              const rect = e.currentTarget.getBoundingClientRect();
+              const px = (e.clientX - rect.left) / rect.width;
+              const py = (e.clientY - rect.top) / rect.height;
+
+              x.set((px - 0.5) * 10);
+              y.set(-(py - 0.5) * 10);
+            };
+
+            const handleMouseLeave = () => {
+              x.set(0);
+              y.set(0);
+            };
+
+            return (
+              <motion.div
+                key={index}
+                onMouseMove={handleMouseMove}
+                onMouseLeave={handleMouseLeave}
+                style={{
+                  rotateX,
+                  rotateY,
+                  transformPerspective: 800,
+                }}
+                initial={{ opacity: 0, y: 40, scale: 0.95 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                whileHover={{
+                  y: -10,
+                  scale: 1.04,
+                }}
+                className={`group relative rounded-2xl p-4 sm:p-6 shadow transition-all duration-300 ${
+                  darkMode ? "bg-[#6A1E55]" : "bg-pink-50"
+                }`}
+              >
+                {/* Glow */}
+                <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition duration-300 bg-pink-400/10 blur-xl" />
+
+                {/* Content */}
+                <div className="relative z-10">
+                  <div className="relative w-full h-20 sm:h-24 mb-4">
+                    <Image
+                      src={edu.image}
+                      alt={edu.name}
+                      fill
+                      className="object-contain transition-transform duration-300 group-hover:scale-110"
+                    />
+                  </div>
+
+                  <h3 className="text-sm sm:text-base font-semibold">
+                    {edu.name}
+                  </h3>
+                  <p className="text-xs sm:text-sm opacity-80">
+                    {edu.location}
+                  </p>
+                  <p className="text-xs sm:text-sm mt-2">{edu.degree}</p>
+                  <p className="text-xs mt-1 opacity-70">{edu.year}</p>
+                </div>
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </section>

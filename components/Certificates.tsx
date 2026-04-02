@@ -50,7 +50,7 @@ export default function Certificates({ darkMode }: CertificatesProps) {
     <section
       id="certificates"
       className={`px-10 py-20 transition-colors duration-300 ${
-        darkMode ? "bg-[#3B1C32]" : "bg-white"
+        darkMode ? "bg-[#291B25]" : "bg-white"
       }`}
     >
       <div className="max-w-6xl mx-auto">

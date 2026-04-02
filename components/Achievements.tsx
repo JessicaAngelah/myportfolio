@@ -12,7 +12,7 @@ export default function Achievements({ darkMode }: AchievementsProps) {
     <section
       id="achievements"
       className={`px-4 sm:px-6 lg:px-10 py-16 sm:py-20 transition-colors duration-300 ${
-        darkMode ? "bg-[#3B1C32]" : "bg-white"
+        darkMode ? "bg-[#291B25]" : "bg-white"
       }`}
     >
       <div className="max-w-md sm:max-w-lg mx-auto">
