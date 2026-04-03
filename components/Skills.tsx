@@ -37,7 +37,7 @@ export default function Skills({ darkMode }: SkillsProps) {
             {[
               ["Programming & Web", " Python, HTML, CSS, JavaScript, Java, C, C++, PHP, TypeScript, SQL, Rust"],
               ["Frontend Development", " React.js, Node.js, Next.js, Tailwind CSS, UI wireframing, responsive design, cross-browser compatibility"],
-              ["Excel, Power BI, Tableau, Google Colab, data cleaning, data visualization, basic statistical analysis"],
+              ["Data Analysis", "Excel, Power BI, Tableau, Google Colab, data cleaning, data visualization, basic statistical analysis"],
               ["Tools & Platforms", "VSC, Jira, Slack, Microsoft Teams, Google Workspace, Microsoft Office, Git, GitHub"],
               ["Design & Prototyping", "Figma, Canva, Miro, Draw.io, PlantUML, user flow design, wireframing, prototyping"],
               ["APIs & Backend", "REST APIs, Firebase, SQL/Relational Databases, API integration, JSON, Docker"],
