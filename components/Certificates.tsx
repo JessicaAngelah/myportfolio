@@ -10,39 +10,44 @@ interface CertificatesProps {
 export default function Certificates({ darkMode }: CertificatesProps) {
   const certificates = [
     {
-      title: "How to Prepare Your Career Plan",
-      image: "/assets/BFI1.png",
-      desc: "Certificate of Attendance awarded by BFI Finance for participating in the Career Camp Seminar Series.",
-    },
-    {
-      title: "Anatomy of Work Ethic: The Hidden Key to Success",
-      image: "/assets/BFI2.png",
-      desc: "Certificate of Attendance awarded by Student Career Development – Internship Center, Binus University.",
-    },
-    {
-      title: "Casual Sharing About Prospective Career",
-      image: "/assets/BFI3.png",
-      desc: "Certificate of Attendance awarded by Binus University Alumni (Owner of @makeyourbrick).",
-    },
-    {
-      title: "The Importance of Personal Branding for Your Career",
-      image: "/assets/BFI4.png",
-      desc: "Certificate of Attendance awarded by PT Bank Multiarta Sentosa Tbk (Bank MAS).",
-    },
-    {
-      title: "Emerging Careers in Blockchain: Skills, Trends, and Opportunities",
-      image: "/assets/BFI5.png",
-      desc: "Certificate of Attendance awarded by Pixel8labs.",
+      title: "Build Your First Mobile App with Flutter",
+      image: "/assets/Certificates/Flutter.png",
+      desc: "Certificate of attendance for attending a workshop on building mobile apps with Flutter, awarded by Binus University.",
     },
     {
       title: 'Workshop "GitHub 101"',
-      image: "/assets/Robogals.png",
+      image: "/assets/Certificates/Robogals.png",
       desc: "Certification of Participation awarded by Robogals Jakarta for attending a GitHub version control workshop.",
     },
     {
       title: "Transforming Youth Skills for the Future to Represent Sustainable Development Goals",
-      image: "/assets/WorldYouth.png",
+      image: "/assets/Certificates/WorldYouth.png",
       desc: "Certificate of Appreciation awarded by the Community Development Center Academic, Binus University.",
+    },
+    {
+      title: "How to Prepare Your Career Plan",
+      image: "/assets/Certificates/BFI1.png",
+      desc: "Certificate of Attendance awarded by BFI Finance for participating in the Career Camp Seminar Series.",
+    },
+    {
+      title: "Anatomy of Work Ethic: The Hidden Key to Success",
+      image: "/assets/Certificates/BFI2.png",
+      desc: "Certificate of Attendance awarded by Student Career Development – Internship Center, Binus University.",
+    },
+    {
+      title: "Casual Sharing About Prospective Career",
+      image: "/assets/Certificates/BFI3.png",
+      desc: "Certificate of Attendance awarded by Binus University Alumni (Owner of @makeyourbrick).",
+    },
+    {
+      title: "The Importance of Personal Branding for Your Career",
+      image: "/assets/Certificates/BFI4.png",
+      desc: "Certificate of Attendance awarded by PT Bank Multiarta Sentosa Tbk (Bank MAS).",
+    },
+    {
+      title: "Emerging Careers in Blockchain: Skills, Trends, and Opportunities",
+      image: "/assets/Certificates/BFI5.png",
+      desc: "Certificate of Attendance awarded by Pixel8labs.",
     },
   ];
 

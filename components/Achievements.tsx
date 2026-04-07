@@ -37,7 +37,7 @@ export default function Achievements({ darkMode }: AchievementsProps) {
         >
           <div className="relative w-full aspect-square">
             <Image
-              src="/assets/Achievement1.png"
+              src="/assets/Achievements/Achievement1.png"
               alt="Favorite Winner Innovation is Our Middle Name"
               fill
               className="object-cover"

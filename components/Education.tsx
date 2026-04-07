@@ -29,21 +29,21 @@ export default function Education({ darkMode }: EducationProps) {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {[
             {
-              image: "/assets/Binus.png",
+              image: "/assets/Education/Binus.png",
               name: "Binus International University",
               location: "Jakarta, Indonesia",
               degree: "Bachelor’s Degree, Computer Science",
               year: "2022 – 2026",
             },
             {
-              image: "/assets/Latrobe.png",
+              image: "/assets/Education/Latrobe.png",
               name: "La Trobe University",
               location: "Melbourne, Australia",
               degree: "Bachelor’s Degree, Computer Science",
               year: "2022 – 2026",
             },
             {
-              image: "/assets/Universal.png",
+              image: "/assets/Education/Universal.png",
               name: "Universal School Kemayoran",
               location: "Jakarta, Indonesia",
               degree: "High School – Cambridge Curriculum",

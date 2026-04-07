@@ -72,7 +72,7 @@ export default function AboutMe({ darkMode }: AboutMeProps) {
           <div className="absolute inset-0 rounded-full bg-pink-400/30 blur-xl" />
 
           <Image
-            src="/assets/Profile.png"
+            src="/assets/AboutMe/Profile.png"
             alt="Jessica Angela Huang"
             fill
             className="rounded-full object-cover relative z-10 shadow-2xl border-4 border-white/20"

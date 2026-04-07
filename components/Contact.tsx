@@ -146,7 +146,7 @@ export default function Contact({ darkMode }: ContactProps) {
         </div>
 
         <motion.a
-          href="/assets/JessicaAH-Resume.pdf"
+          href="/assets/Contact/JessicaAH-Resume.pdf"
           download
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}

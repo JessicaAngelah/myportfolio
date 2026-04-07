@@ -11,27 +11,27 @@ export default function Courses({ darkMode }: CoursesProps) {
   const courses = [
     {
       title: "Java (Basic) – HackerRank",
-      image: "/assets/Hackerrank.png",
+      image: "/assets/Courses/Hackerrank.png",
       desc: "Certification awarded by HackerRank for successfully passing the Java (Basic) programming assessment.",
     },
     {
       title: "Java Programming",
-      image: "/assets/GreatLearning.png",
+      image: "/assets/Courses/GreatLearning.png",
       desc: "Certification of Completion awarded by Great Learning for completing a course in Java Programming.",
     },
     {
       title: "AWS Academy Cloud Developing [101404]",
-      image: "/assets/AWS.png",
+      image: "/assets/Courses/AWS.png",
       desc: "Certification awarded through AWS Academy for completing the Cloud Developing course, covering fundamental cloud development concepts and practices.",
     },
     {
       title: "Mathematics for AI: Beginner_OEC3003_01 (이상구)",
-      image: "/assets/SKKU1.png",
+      image: "/assets/Courses/SKKU1.png",
       desc: "Course taught by Professor Kim, Kyoung Hwon (English subtitles available). This course introduces the fundamental mathematics and algorithms required to understand artificial intelligence, with practical coding exercises to reinforce theoretical concepts. This course is provided by SKKU (Sungkyunkwan University)",
     },
     {
       title: "Korean Starter Pack: Beginner_OEC3001_01 (김경훤)",
-      image: "/assets/SKKU2.png",
+      image: "/assets/Courses/SKKU2.png",
       desc: "Course taught by Professor Lee, Sanggu (English subtitles available). Students learn how to read and write Hangeul accurately while gaining insight into Korean culture, pronunciation, and essential everyday communication skills. This course is provided by SKKU (Sungkyunkwan University)",
     },
   ];

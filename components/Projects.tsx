@@ -15,7 +15,7 @@ export default function Projects({ darkMode }: ProjectsProps) {
       desc: "Designed and built frontend UI for an incentive-based recycling application using modern web technologies. Contributed to UX flow design and usability considerations.",
       link: "https://www.figma.com/proto/L7oNRgCqHdEe1Z2G7RPcIK/Recykle?node-id=2-2",
       linkLabel: "View Prototype Design →",
-      image: "/assets/Recykle.png",
+      image: "/assets/Projects/Recykle.png",
     },
     {
       title: "Kleanse",
@@ -23,13 +23,13 @@ export default function Projects({ darkMode }: ProjectsProps) {
       desc: "Designed and built frontend UI for a cleaning service mobile app. Contributed to UX flow design and usability considerations.",
       link: "https://www.figma.com/proto/XEUtq5uctT3yBSFs53yV2e/Kleanse---Prototype2",
       linkLabel: "View Prototype Design →",
-      image: "/assets/Kleanse.png",
+      image: "/assets/Projects/Kleanse.png",
     },
     {
       title: "Flower Management System",
       role: "Developer | Data Structures",
       desc: "Built a system to manage flower inventory using structured data handling and algorithmic logic with Java.",
-      image: "/assets/FlowerShop.png",
+      image: "/assets/Projects/FlowerShop.png",
       tech: ["Java"],
       actions: [
         {
@@ -42,7 +42,7 @@ export default function Projects({ darkMode }: ProjectsProps) {
       title: "Grocery Management System",
       role: "Developer | Database",
       desc: "Database-driven Grocery Management System built with Python and MySQL.",
-      image: "/assets/GroceryStore.png",
+      image: "/assets/Projects/GroceryStore.png",
       tech: ["Python", "MySQL", "XAMPP"],
       actions: [
         {
@@ -55,9 +55,13 @@ export default function Projects({ darkMode }: ProjectsProps) {
       title: "Stylofit",
       role: "Design & Frontend Developer | Mobile Application",
       desc: "UI/UX design and frontend for a fashion-focused social media app.",
-      image: "/assets/Stylofit.png",
+      image: "/assets/Projects/Stylofit.png",
       tech: ["JavaScript", "Firebase", "Frontend", "UI/UX", "HTML", "CSS"],
       actions: [
+        {
+          label: "View Prototype Design",
+          link: "https://www.figma.com/proto/vSUjAvxbm2DzSxUpcdEBT4/MobAppDev?node-id=2-3&p=f&t=nzR0MfpGmIrhozKA-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2%3A3&show-proto-sidebar=1",
+        },
         {
           label: "View Source Code",
           link: "https://github.com/abasiman/stylofitApp",
@@ -68,7 +72,7 @@ export default function Projects({ darkMode }: ProjectsProps) {
       title: "Moralm",
       role: "Design & Frontend Developer | Web App & Security",
       desc: "Designed the prototype for the company’s supply chain and built the frontend for their delivery system & Settings.",
-      image: "/assets/Moralm.png",
+      image: "/assets/Projects/Moralm.png",
       tech: ["JavaScript", "Firebase", "Frontend", "UI/UX", "HTML", "CSS"],
       actions: [
         {
@@ -83,13 +87,13 @@ export default function Projects({ darkMode }: ProjectsProps) {
       desc: "Designed UI for an F&B mobile application.",
       link: "https://www.figma.com/proto/LaPg4XUtCYTbk9NkitEKuw/FindMyCoffee?node-id=74-66&p=f&t=e2Xk5PgtlelRsFpG-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=74%3A66",
       linkLabel: "View Prototype Design →",
-      image: "/assets/FindMyCoffee.png",
+      image: "/assets/Projects/FindMyCoffee.png",
     },
     {
       title: "Akselerasi.co",
       role: "Design & Frontend Developer | Capstone Project",
       desc: "UI/UX and frontend components for an HR-Tech platform.",
-      image: "/assets/Akselerasi.png",
+      image: "/assets/Projects/Akselerasi.png",
       tech: ["JavaScript", "Firebase", "Frontend", "UI/UX", "HTML", "CSS", "TypeScript"],
       actions: [
         {
@@ -102,7 +106,7 @@ export default function Projects({ darkMode }: ProjectsProps) {
       title: "Modeling Infection Dynamics with Antibiotic Treatment",
       role: "Computational Biology",
       desc: "A mathematical model simulating interactions between sensitive and resistant bacterial populations under various antibiotic treatments.",
-      image: "/assets/InfectionDynamics.png",
+      image: "/assets/Projects/InfectionDynamics.png",
       tech: ["Python", "NumPy", "Matplotlib"],
       actions: [
         {
@@ -115,7 +119,7 @@ export default function Projects({ darkMode }: ProjectsProps) {
       title: "Density Simulation",
       role: "Computational Physics",
       desc: "Density-based interactive tool designed to help visualize and understand spatial behavior. Implemented in Python.",
-      image: "/assets/DensitySimulator.png",
+      image: "/assets/Projects/DensitySimulator.png",
       tech: ["Python"],
       actions: [
         {
@@ -128,7 +132,7 @@ export default function Projects({ darkMode }: ProjectsProps) {
       title: "ANTAM Stock Price Prediction",
       role: "Machine Learning | Time Series Forecasting",
       desc: "Built and compared XGBoost and Random Forest to predict ANTAM stock prices. Implemented buy/sell signal generation based on predicted returns and evaluated performance using backtesting strategies.",
-      image: "/assets/MLStockPrediction.png",
+      image: "/assets/Projects/MLStockPrediction.png",
       tech: ["Python", "XGBoost", "Random Forest", "Pandas", "NumPy", "Matplotlib"],
       actions: [
         {
@@ -141,7 +145,7 @@ export default function Projects({ darkMode }: ProjectsProps) {
       title: "To-Do List Web App",
       role: "Frontend Developer",
       desc: "A responsive to-do list web application that allows users to add, complete, and delete tasks. Deployed using Vercel with a clean and intuitive UI.",
-      image: "/assets/ToDoList.png",
+      image: "/assets/Projects/ToDoList.png",
       tech: ["JavaScript", "HTML", "CSS"],
       actions: [
         {
@@ -158,7 +162,7 @@ export default function Projects({ darkMode }: ProjectsProps) {
       title: "Alarm Clock Finite State Machine (FSM)",
       role: "Developer | Embedded Systems & Logic Design",
       desc: "Implemented an Alarm Clock system using a Finite State Machine (FSM) in C.",
-      image: "/assets/FSM.png",
+      image: "/assets/Projects/FSM.png",
       tech: ["C", "Finite State Machine", "Logic Design"],
       actions: [
         {

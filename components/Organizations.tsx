@@ -38,7 +38,7 @@ export default function Organizations({ darkMode }: OrganizationsProps) {
           <div className="flex justify-center mb-5 sm:mb-6">
             <div className="relative w-48 sm:w-64 lg:w-80 h-20 sm:h-24">
               <Image
-                src="/assets/GDSC.png"
+                src="/assets/Organizations/GDSC.png"
                 alt="Google Developer Student Club"
                 fill
                 className="object-contain"
