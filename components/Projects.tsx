@@ -145,7 +145,7 @@ export default function Projects({ darkMode }: ProjectsProps) {
       title: "To-Do List Web App",
       role: "Frontend Developer",
       desc: "A responsive to-do list web application that allows users to add, complete, and delete tasks. Deployed using Vercel with a clean and intuitive UI.",
-      image: "/assets/Projects/ToDoList.png",
+      image: "/assets/Projects/Todolist.png",
       tech: ["JavaScript", "HTML", "CSS"],
       actions: [
         {
