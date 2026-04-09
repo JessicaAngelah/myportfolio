@@ -10,6 +10,32 @@ interface ProjectsProps {
 export default function Projects({ darkMode }: ProjectsProps) {
   const projects = [
     {
+      title: "Akselerasi.co",
+      role: "Design & Frontend Developer | Capstone Project",
+      desc: "UI/UX and frontend components for an HR-Tech platform.",
+      image: "/assets/Projects/Akselerasi.png",
+      tech: ["JavaScript", "Firebase", "Frontend", "UI/UX", "HTML", "CSS", "TypeScript"],
+      actions: [
+        {
+          label: "View Source Code",
+          link: "https://github.com/ferd78/Akselerasi.coCapstone-SE-PMS.git",
+        },
+      ],
+    },
+    {
+      title: "Moralm",
+      role: "Design & Frontend Developer | Web App & Security",
+      desc: "Designed the prototype for the company’s supply chain and built the frontend for their delivery system & Settings.",
+      image: "/assets/Projects/Moralm.png",
+      tech: ["JavaScript", "Firebase", "Frontend", "UI/UX", "HTML", "CSS"],
+      actions: [
+        {
+          label: "View Source Code",
+          link: "https://github.com/JessicaAngelah/WADS-MoralmHarbor-FP-Done.git",
+        },
+      ],
+    },
+    {
       title: "Recykle Web App",
       role: "Frontend Developer | Human Computer Interaction",
       desc: "Designed and built frontend UI for an incentive-based recycling application using modern web technologies. Contributed to UX flow design and usability considerations.",
@@ -69,38 +95,12 @@ export default function Projects({ darkMode }: ProjectsProps) {
       ],
     },
     {
-      title: "Moralm",
-      role: "Design & Frontend Developer | Web App & Security",
-      desc: "Designed the prototype for the company’s supply chain and built the frontend for their delivery system & Settings.",
-      image: "/assets/Projects/Moralm.png",
-      tech: ["JavaScript", "Firebase", "Frontend", "UI/UX", "HTML", "CSS"],
-      actions: [
-        {
-          label: "View Source Code",
-          link: "https://github.com/JessicaAngelah/WADS-MoralmHarbor-FP-Done.git",
-        },
-      ],
-    },
-    {
       title: "FindMyCoffee",
       role: "Design | Professional Practices & Entrepreneurship",
       desc: "Designed UI for an F&B mobile application.",
       link: "https://www.figma.com/proto/LaPg4XUtCYTbk9NkitEKuw/FindMyCoffee?node-id=74-66&p=f&t=e2Xk5PgtlelRsFpG-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=74%3A66",
       linkLabel: "View Prototype Design →",
       image: "/assets/Projects/FindMyCoffee.png",
-    },
-    {
-      title: "Akselerasi.co",
-      role: "Design & Frontend Developer | Capstone Project",
-      desc: "UI/UX and frontend components for an HR-Tech platform.",
-      image: "/assets/Projects/Akselerasi.png",
-      tech: ["JavaScript", "Firebase", "Frontend", "UI/UX", "HTML", "CSS", "TypeScript"],
-      actions: [
-        {
-          label: "View Source Code",
-          link: "https://github.com/ferd78/Akselerasi.coCapstone-SE-PMS.git",
-        },
-      ],
     },
     {
       title: "Modeling Infection Dynamics with Antibiotic Treatment",
