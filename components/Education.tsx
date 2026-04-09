@@ -50,7 +50,6 @@ export default function Education({ darkMode }: EducationProps) {
               year: "2015 – 2022",
             },
           ].map((edu, index) => {
-            // ✨ 3D Tilt Logic
             const x = useMotionValue(0);
             const y = useMotionValue(0);
 
@@ -62,7 +61,7 @@ export default function Education({ darkMode }: EducationProps) {
               const px = (e.clientX - rect.left) / rect.width;
               const py = (e.clientY - rect.top) / rect.height;
 
-              x.set((px - 0.5) * 12); // Controls tilt intensity
+              x.set((px - 0.5) * 12);
               y.set(-(py - 0.5) * 12);
             };
 
@@ -73,37 +72,51 @@ export default function Education({ darkMode }: EducationProps) {
 
             return (
               <motion.div
-                key={index}
-                onMouseMove={handleMouseMove}
-                onMouseLeave={handleMouseLeave}
-                style={{
-                  rotateX,
-                  rotateY,
-                  transformPerspective: 800,
-                }}
+              key={index}
+              onMouseMove={handleMouseMove}
+              onMouseLeave={handleMouseLeave}
+              style={{
+                rotateX,
+                rotateY,
+                transformPerspective: 800,
+              }}
 
-                // Entry animation only
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+              initial={{ opacity: 0, y: 20 }}
 
-                // 🖱️ Interaction: Triggers ONLY on hover/tap
-                whileHover={{
-                  y: -10,
-                  scale: 1.02,
-                  transition: { duration: 0.2 }
-                }}
-                whileTap={{
-                  scale: 0.98,
-                }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
 
-                className={`group relative rounded-2xl p-4 sm:p-6 shadow-lg transition-all duration-300 ${
-                  darkMode
-                    ? "bg-[#6A1E55] hover:shadow-pink-500/20"
-                    : "bg-pink-50 hover:shadow-pink-200"
-                }`}
-              >
+              // ✅ FLOATING (always running)
+              animate={{
+                y: [0, -8, 0],
+              }}
+
+              transition={{
+                opacity: { duration: 0.5, delay: index * 0.1 },
+                y: {
+                  duration: 3 + index * 0.4,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                },
+              }}
+
+              // 🖱️ Hover overrides float
+              whileHover={{
+                y: -10,
+                scale: 1.03,
+                transition: { duration: 0.2 },
+              }}
+
+              whileTap={{
+                scale: 0.98,
+              }}
+
+              className={`group relative rounded-2xl p-4 sm:p-6 shadow-lg transition-all duration-300 ${
+                darkMode
+                  ? "bg-[#6A1E55] hover:shadow-pink-500/20"
+                  : "bg-pink-50 hover:shadow-pink-200"
+              }`}
+            >
                 {/* Glow Overlay */}
                 <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition duration-300 bg-pink-400/10 blur-xl" />
 
@@ -141,4 +154,4 @@ export default function Education({ darkMode }: EducationProps) {
       </div>
     </section>
   );
-} 
+}

@@ -7,7 +7,6 @@ interface ContactProps {
 }
 
 export default function Contact({ darkMode }: ContactProps) {
-  // 🖱️ mouse tracking
   const x = useMotionValue(0);
   const y = useMotionValue(0);
 
@@ -37,21 +36,19 @@ export default function Contact({ darkMode }: ContactProps) {
         darkMode ? "bg-[#291B25]" : "bg-white"
       }`}
     >
-      {/* ✨ Interactive Background (moves ONLY on hover) */}
-      {/* Top Blob */}
+      {/* Background blobs */}
       <motion.div
         style={{ x: smoothX, y: smoothY }}
         className="absolute w-[300px] h-[300px] bg-pink-500/10 blur-3xl rounded-full top-[-50px] left-[-60px]"
       />
 
-      {/* Bottom Blob */}
       <motion.div
         style={{ x: smoothX, y: smoothY }}
         className="absolute w-[350px] h-[350px] bg-purple-500/10 blur-3xl rounded-full bottom-[-80px] right-[-80px]"
       />
 
-      {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto text-center">
+
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -62,8 +59,9 @@ export default function Contact({ darkMode }: ContactProps) {
           Contact Me
         </motion.h2>
 
+        {/* CONTACT INFO */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-6 mb-8 sm:mb-10">
-          {/* Phone */}
+
           <div className={`rounded-2xl p-4 sm:p-6 shadow text-sm ${
             darkMode ? "bg-[#6A1E55]" : "bg-pink-50"
           }`}>
@@ -73,7 +71,6 @@ export default function Contact({ darkMode }: ContactProps) {
             </p>
           </div>
 
-          {/* Email */}
           <div className={`rounded-2xl p-4 sm:p-6 shadow text-sm ${
             darkMode ? "bg-[#6A1E55]" : "bg-pink-50"
           }`}>
@@ -83,7 +80,6 @@ export default function Contact({ darkMode }: ContactProps) {
             </p>
           </div>
 
-          {/* Location */}
           <div className={`rounded-2xl p-4 sm:p-6 shadow text-sm ${
             darkMode ? "bg-[#6A1E55]" : "bg-pink-50"
           }`}>
@@ -93,7 +89,6 @@ export default function Contact({ darkMode }: ContactProps) {
             </p>
           </div>
 
-          {/* LinkedIn */}
           <div className={`rounded-2xl p-4 sm:p-6 shadow text-sm ${
             darkMode ? "bg-[#6A1E55]" : "bg-pink-50"
           }`}>
@@ -110,41 +105,9 @@ export default function Contact({ darkMode }: ContactProps) {
             </p>
           </div>
 
-          {/* GitHub */}
-          <div className={`rounded-2xl p-4 sm:p-6 shadow text-sm ${
-            darkMode ? "bg-[#6A1E55]" : "bg-pink-50"
-          }`}>
-            🐱 <span className="font-medium">GitHub</span>
-            <p className="mt-1 text-xs sm:text-sm">
-              <a
-                href="https://github.com/jessicaangelah"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-pink-500 hover:underline break-all"
-              >
-                github.com/jessicaangelah
-              </a>
-            </p>
-          </div>
-
-          {/* LeetCode */}
-          <div className={`rounded-2xl p-4 sm:p-6 shadow text-sm ${
-            darkMode ? "bg-[#6A1E55]" : "bg-pink-50"
-          }`}>
-            💡 <span className="font-medium">LeetCode</span>
-            <p className="mt-1 text-xs sm:text-sm">
-              <a
-                href="https://leetcode.com/u/Jris/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-pink-500 hover:underline break-all"
-              >
-                leetcode.com/u/Jris
-              </a>
-            </p>
-          </div>
         </div>
 
+        {/* DOWNLOAD RESUME */}
         <motion.a
           href="/assets/Contact/JessicaAH-Resume.pdf"
           download
@@ -156,6 +119,72 @@ export default function Contact({ darkMode }: ContactProps) {
         >
           Download Resume
         </motion.a>
+
+        {/* Others */}
+        <div className="mt-12">
+
+          <h3 className="text-sm sm:text-base font-semibold mb-6">
+            Others
+          </h3>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
+
+            <a
+              href="https://github.com/jessicaangelah"
+              target="_blank"
+              className={`rounded-2xl p-4 sm:p-6 shadow text-sm transition ${
+                darkMode ? "bg-[#6A1E55] hover:shadow-pink-500/20" : "bg-pink-50 hover:shadow-pink-200"
+              }`}
+            >
+              🐱 <span className="font-medium">GitHub</span>
+              <p className="mt-1 text-[11px] sm:text-xs text-pink-500 break-all leading-tight">
+                github.com/jessicaangelah
+              </p>
+            </a>
+
+            <a
+              href="https://jessicaah7.wordpress.com"
+              target="_blank"
+              className={`rounded-2xl p-4 sm:p-6 shadow text-sm transition ${
+                darkMode ? "bg-[#6A1E55] hover:shadow-pink-500/20" : "bg-pink-50 hover:shadow-pink-200"
+              }`}
+            >
+              ✍️ <span className="font-medium">Blog</span>
+              <p className="mt-1 text-[11px] sm:text-xs text-pink-500 break-all leading-tight">
+                jessicaah7.wordpress.com
+              </p>
+            </a>
+
+            <a
+              href="https://www.hackerrank.com/profile/Jessicaah"
+              target="_blank"
+              className={`rounded-2xl p-4 sm:p-6 shadow text-sm transition ${
+                darkMode ? "bg-[#6A1E55] hover:shadow-pink-500/20" : "bg-pink-50 hover:shadow-pink-200"
+              }`}
+            >
+              🧠 <span className="font-medium">HackerRank</span>
+              <p className="mt-1 text-[11px] sm:text-xs text-pink-500 break-all leading-tight">
+                hackerrank.com/Jessicaah
+              </p>
+            </a>
+
+            <a
+              href="https://leetcode.com/u/Jris/"
+              target="_blank"
+              className={`rounded-2xl p-4 sm:p-6 shadow text-sm transition ${
+                darkMode ? "bg-[#6A1E55] hover:shadow-pink-500/20" : "bg-pink-50 hover:shadow-pink-200"
+              }`}
+            >
+              💡 <span className="font-medium">LeetCode</span>
+              <p className="mt-1 text-[11px] sm:text-xs text-pink-500 break-all leading-tight">
+                leetcode.com/u/Jris
+              </p>
+            </a>
+
+          </div>
+
+        </div>
+
       </div>
     </section>
   );
