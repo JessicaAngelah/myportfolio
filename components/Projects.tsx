@@ -338,7 +338,9 @@ export default function Projects({ darkMode }: ProjectsProps) {
         {/* CTA BUTTON */}
         <div className="flex justify-center mt-12">
           <a
-            href="#"
+            href="https://jessicaah-myblog.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
             className={`px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 shadow-md
               ${
                 darkMode

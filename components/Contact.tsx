@@ -143,7 +143,7 @@ export default function Contact({ darkMode }: ContactProps) {
             </a>
 
             <a
-              href="https://jessicaah7.wordpress.com"
+              href="https://jessicaah-myblog.vercel.app/"
               target="_blank"
               className={`rounded-2xl p-4 sm:p-6 shadow text-sm transition ${
                 darkMode ? "bg-[#6A1E55] hover:shadow-pink-500/20" : "bg-pink-50 hover:shadow-pink-200"
@@ -151,7 +151,7 @@ export default function Contact({ darkMode }: ContactProps) {
             >
               ✍️ <span className="font-medium">My Blogs</span>
               <p className="mt-1 text-[11px] sm:text-xs text-pink-500 break-all leading-tight">
-                coming soon!
+                jessicaah-myblog.vercel.app
               </p>
             </a>
 
