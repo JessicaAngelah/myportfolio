@@ -149,9 +149,9 @@ export default function Contact({ darkMode }: ContactProps) {
                 darkMode ? "bg-[#6A1E55] hover:shadow-pink-500/20" : "bg-pink-50 hover:shadow-pink-200"
               }`}
             >
-              ✍️ <span className="font-medium">Blog</span>
+              ✍️ <span className="font-medium">My Blogs</span>
               <p className="mt-1 text-[11px] sm:text-xs text-pink-500 break-all leading-tight">
-                jessicaah7.wordpress.com
+                coming soon!
               </p>
             </a>
 
